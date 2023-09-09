@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 0% 20%;
+    margin-top: 20px;
+}
+
+#bingo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: 1px 1px 5px gray;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    box-shadow: 1px 1px 5px gray;
+
+    flex: 33.33%;
+
+    position: relative;
+
+    text-decoration: none;
+}
+.donebox, .regeneratebox {
+    position: absolute;
+
+
+    outline: none;
+    border: none;
+    background: none;
+    
+    cursor: pointer;
+}
+.donebox {
+    top: 5px;
+    right: 10px;
+
+    width: 16px;
+}
+.regeneratebox {
+    top: 2px;
+    right: 34px; 
+
+    width: 22px;
+}
+
+.donebox img, .regeneratebox img {
+    width: 100%;
+}
+#area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+#menu {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+
+    position: relative;
+}
+
+.menuBtn {
+    padding: 25px;
+    outline: none;
+    border: 0;
+    border-radius: 10%;
+    border: 3px cyan solid;
+    background: 0;
+
+    color: rgb(214, 26, 26);
+}
+.menuBtn:hover {
+    color: rgb(134, 35, 35);
+}
+
+#lengtherror {
+    display: none;
+    color: red;
+}
+#info {
+    display: block;
+    position: absolute;
+    right: 20px;
+}
